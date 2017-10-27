@@ -314,43 +314,28 @@ $(document).ready(function () {
 //
 //    $('.collapse').collapse();
 
+    /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+    /* Map Sidebar */
+    /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-
-});
-
-$(function() {
-					$("#one").on({
-
-						click: function(){
-							$("#card").css("background-color", "red");
-						}  
-            });
-            $("#two").on({
-						click: function(){
-							$("#card").css("background-color", "yellow");
-						}  
-					});
-				});
-				
-
-         $(document).ready(function(){
-            $("#one").click(function(){
-            $("#card").css("border-color","one");
-            });
-            
-            $("#two").click(function(){
-            $("#card").css("border-color","green");
-            });
-            
-            $("#tree").click(function(){
-            $("#card").css("border-color","yellow");
-            });
-            
-            $("#four").click(function(){
-            $("#card").css("border-color","blue");
-            });
-            
-            $("#five").click(function(){
-            $("#card").css("border-color","black");
-            });
+    $(document).ready(function(){
+        $("#one").click(function(){
+        $("#card").css("border-color","one");
         });
+            
+        $("#two").click(function(){
+        $("#card").css("border-color","green");
+        });
+            
+        $("#tree").click(function(){
+        $("#card").css("border-color","yellow");
+        });
+            
+        $("#four").click(function(){
+        $("#card").css("border-color","blue");
+        });
+            
+        $("#five").click(function(){
+        $("#card").css("border-color","black");
+        });
+     });

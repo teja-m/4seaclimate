@@ -203,3 +203,8 @@ if("undefined"==typeof jQuery)throw new Error("Bootstrap's JavaScript requires j
             $("#sidebar-right-img").attr('src', "../img/sidebar-right-seven.png");
             });
         });
+
+        $('#map-list').on('click', 'li', function() {
+    $('#map-list li.active').removeClass('active');
+    $(this).addClass('active');
+});
