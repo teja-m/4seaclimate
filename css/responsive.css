@@ -1,0 +1,181 @@
+@media (min-width: 1200px){
+
+}
+
+@media (max-width : 1024px) {
+    .navbar-default .navbar-nav > li > a {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+/*iPad Landscape Mode and Large Tablets */
+@media (max-width: 1024px){
+
+}
+
+/*Small Desktop and Very Small Notebook */
+@media (max-width: 992px){
+    .wrapper{
+        width: 330px;
+    }
+    #placeholder{
+        display:none;
+    }
+}
+
+/*Medium Tablets */
+@media (max-width: 900px){
+    .navbar-default .navbar-nav > li > a {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (min-width: 768px){
+    .nav{
+        float:none;
+        display:inline-block;
+        padding-top: 30px;
+    }
+}
+
+/*iPad Portrait Mode, iPad Mini and Small Tablets */
+@media (max-width: 768px){
+
+    .navbar-default{
+        height: 50px;
+    }
+
+    .preloaderLogo{
+        min-width: 100px;
+        max-width: 100px;
+        width: 100px;
+    }
+
+    .ip-header {
+        min-height: 120px;
+    }
+
+    .affix .navbar-collapse {
+        background:white;
+    }
+
+    .navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
+        max-height: 100%;
+    }
+
+    .navbar-nav>li>.dropdown-menu {
+        text-align: center;
+    }
+}
+
+/*iPad Portrait Mode, iPad Mini and Small Tablets */
+@media (max-width: 767px) {
+
+    .navbar-default .navbar-collapse {
+        background-color: white;
+        border-bottom: 2px solid #4db5a5;
+        border-top: none;
+        text-align: center;
+    }
+
+}
+
+/*Medium Smart Phones v2*/
+@media screen and (max-width: 640px){
+    h1 {
+        font-size: 36px;
+        letter-spacing: 10px;
+    }
+
+    h2 {
+        font-size: 24px;
+        text-transform: uppercase;
+        letter-spacing: 8px;
+    }
+
+    .introLogo {
+        width: 80px;
+    }
+}
+
+@media screen and (max-width: 600px){
+
+    h1 {
+        font-size: 20px;
+        letter-spacing: 10px;
+    }
+
+    .navbar-default {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+@media screen and (max-width: 600px) and (orientation : landscape){
+    #intro .separator{
+        margin-top:15px;
+        margin-bottom:15px;
+        width:100px;
+        max-width:100px;
+    }
+
+    .ip-logo img{
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width: 480px){
+
+    section .container {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    h1 {
+        font-size: 24px;
+        letter-spacing: 6px;
+    }
+
+    h2 {
+        font-size: 16px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+    }
+
+    h4 {
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    #intro p {
+        font-size: 12px;
+    }
+
+    .navbar-default {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+/*google nexus ish*/
+@media screen and (max-width: 480px) {
+
+}
+
+/*Other Major Small Smart Phones*/
+@media screen and (max-width: 360px){
+
+    section .container {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}
+
+/*iPhone Portrait Mode and Very Small Mobile Phones*/
+@media screen and (max-width: 320px) {
+
+
+}
