@@ -148,7 +148,9 @@ section .container{
     padding-right: 50px;
 }
 
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus{
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a.active{
     color: var(--seablue);
     border-bottom: 2px solid var(--seablue);
 }
@@ -505,6 +507,10 @@ ul, ol {
     margin-right:2px;
     padding:0px;
     display:none;
+     -webkit-transition: all 0.75;
+    -moz-transition: all 0.75;
+    -o-transition: all 0.75s;
+    transition: all 0.75s;
 }
 
 .tabs-left {
@@ -517,7 +523,7 @@ ul, ol {
   border-right: none;
   padding-top: 0px;
   height:129px;
-  margin-top:10em;
+  margin-top:9em;
 }
 .tabs-left ul li {
   float: none;
@@ -560,7 +566,7 @@ ul, ol {
 
 .tab-content p{
   font-size:11px;
-  line-height: 22px;
+  font-family: 'Dosis', sans-serif;
 }
 
 .tab-content .active {
@@ -580,7 +586,7 @@ ul, ol {
 
 .tab-content #a {
   height:129px;
-  top: 10em;
+  top: 9em;
   margin-right:8%;
   position:relative;
 }
@@ -592,6 +598,7 @@ ul, ol {
 #c {
   height: 100%;
   margin-right:8%;
+  padding: 4em 6em 4em 4em;
 }
 
 .nav > li > a {
