@@ -207,4 +207,9 @@ if("undefined"==typeof jQuery)throw new Error("Bootstrap's JavaScript requires j
         $('#map-list').on('click', 'li', function() {
     $('#map-list li.active').removeClass('active');
     $(this).addClass('active');
-});
+    });
+
+      $('#two').click(function() {
+         $('#overlay').toggle();
+    });
+

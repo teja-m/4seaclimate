@@ -61,7 +61,7 @@ section{
 
 section .container{
     padding-top: 105px;
-    padding-bottom: 115px;
+    margin-bottom: 85px;
     width: 100%;
 }
 
@@ -333,6 +333,7 @@ svg {
   right: 0;
   bottom: 0;
   margin: auto;
+  z-index: 5000;
 }
 
 svg path {
@@ -370,7 +371,7 @@ ul, ol {
 /*<!-- Map -->*/
 /*<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->*/
 
-#map .nav {
+#navbar-collapse .nav {
     border-bottom: 4px solid var(--seablue);
     height: 80px;
 }
@@ -460,7 +461,7 @@ ul, ol {
     z-index: 50;
 }
 
-.sidebar-inner ul li:hover:after, .sidebar-inner ul li:active:after {
+.sidebar-inner ul li:hover:after, .sidebar-inner ul li:active:after, .sidebar-inner ul li.active:after {
     width: 210px;
 }
 
@@ -468,30 +469,131 @@ ul, ol {
     color: black;
 }
 
-#one:hover:after{
+#one:hover:after, #one.active:after{
     background-color: var(--one);
 }
 
-#two:hover:after{
+#two:hover:after, #two.active:after{
     background-color: var(--two);
 }
 
-#tree:hover:after{
+#tree:hover:after, #tree.active:after{
     background-color: var(--tree);
 }
 
-#four:hover:after{
+#four:hover:after, #four.active:after{
     background-color: var(--four);
 }
 
-#five:hover:after{
+#five:hover:after, #five.active:after{
     background-color: var(--five);
 }
 
-#six:hover:after{
+#six:hover:after, #six.active:after{
     background-color: var(--six);
 }
 
-#seven:hover:after{
+#seven:hover:after, #seven.active:after{
     background-color: var(--seven);
+}
+
+/*Overlay*/
+
+.overlay{
+    z-index: 6000000;
+    height:100%;
+    margin-right:2px;
+    padding:0px;
+    display:none;
+}
+
+.tabs-left {
+    height:100%;
+}
+
+.tabs-left ul {
+  float: left;
+  border: 2px solid var(--two);
+  border-right: none;
+  padding-top: 0px;
+  height:129px;
+  margin-top:10em;
+}
+.tabs-left ul li {
+  float: none;
+  margin: 0;
+}
+.tabs-left ul li a {
+  margin-right: 0;
+  border: 0;
+}
+.tabs-left ul li a:hover {
+  background-color: transparent;
+}
+.tabs-left ul .glyphicon {
+  color: #fff;
+}
+.tabs-left ul .active .glyphicon {
+  color: #fff;
+  opacity: 0.5;
+}
+
+.overlay .nav-tabs > li.active > a,
+.overlay .nav-tabs > li.active > a:hover,
+.overlay .nav-tabs > li.active > a:focus {
+  border: 0;
+  background-color: transparent;
+}
+
+.tab-content {
+  height:100%;
+}
+
+.tab-content .tab-pane {
+  display: none;
+  padding: 1.6rem;
+  overflow-y: auto;
+  margin-left: 45px;
+  border: 2px solid var(--two);
+  background-color: white;
+}
+
+.tab-content p{
+  font-size:11px;
+  line-height: 22px;
+}
+
+.tab-content .active {
+  display: block;
+}
+
+.list-group {
+  width: 100%;
+}
+.list-group .list-group-item {
+  height: 50px;
+}
+.list-group .list-group-item h4,
+.list-group .list-group-item span {
+  line-height: 11px;
+}
+
+.tab-content #a {
+  height:129px;
+  top: 10em;
+  margin-right:8%;
+  position:relative;
+}
+
+#b {
+  height: 100%;
+}
+
+#c {
+  height: 100%;
+  margin-right:8%;
+}
+
+.nav > li > a {
+  padding: 15px;
 }
