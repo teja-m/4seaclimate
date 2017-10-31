@@ -340,11 +340,11 @@ svg {
 
 svg path {
   fill-opacity: 0;
-  stroke: #000;
-  stroke-width: 3;
+  stroke: white;
+  stroke-width: 2;
   stroke-dasharray: 700;
   stroke-dashoffset: 700;
-  animation: draw 10s infinite linear;
+  animation: draw 5s linear;
 }
 
 @keyframes draw {
@@ -600,3 +600,5 @@ ul, ol {
   margin-right:8%;
   padding: 4em 6em 4em 4em;
 }
+
+
