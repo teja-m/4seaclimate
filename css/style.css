@@ -313,7 +313,8 @@ p.bold{
     margin:0px;
     letter-spacing: 3px;
     line-height: 45px;
-    margin-top: 15px;
+    top: -15px;
+    position: relative;
 }
 
 #intro span{
@@ -326,36 +327,25 @@ p.bold{
     width:100px;
 }
 
-svg {
-  max-width: 100%;
-  max-height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  z-index: 5000;
+svg{
+     opacity:0;
+    transition: all ease-in 1s;
 }
 
-svg path {
-  fill-opacity: 0;
-  stroke: white;
-  stroke-width: 2;
-  stroke-dasharray: 700;
-  stroke-dashoffset: 700;
-  animation: draw 5s linear;
+ svg#Ebene_1{
+    max-width: 100%;
+    max-height: 100%;
+    position: relative;
+    top: -13px;
+    right: -435px;
+    margin: auto;
+    z-index: 5000;
 }
 
-@keyframes draw {
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-@keyframes show {
-  to {
+#intro a:hover svg#Ebene_1,
+#two.active svg{
     opacity: 1;
-  }
+    transition: all ease-in 1s;
 }
 
 /*<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->*/
@@ -499,6 +489,15 @@ ul, ol {
     background-color: var(--seven);
 }
 
+#buble{
+    display: block;
+left: 222px;
+position: absolute;
+z-index: 2;
+top: 148px;
+cursor: pointer;
+}
+
 /*Overlay*/
 
 .overlay{
@@ -539,8 +538,7 @@ ul, ol {
 .tabs-left ul .glyphicon {
   color: #fff;
 }
-.tabs-left ul .active .glyphicon {
-  color: #fff;
+.tabs-left ul .active img {;
   opacity: 0.5;
 }
 
@@ -591,8 +589,25 @@ ul, ol {
   position:relative;
 }
 
+.tab-content .close {
+position: absolute;
+top: 0px;
+right: 0px;
+display: inline-block;
+opacity:1;
+}
+
+.tab-content .more {
+position: absolute; bottom: 0px;right: 0px;display: inline-block;
+}
+
 #b {
   height: 100%;
+}
+#b video{
+  width: 100%;
+  height: auto;
+  padding-top: 20px;
 }
 
 #c {
@@ -600,5 +615,4 @@ ul, ol {
   margin-right:8%;
   padding: 4em 6em 4em 4em;
 }
-
 
