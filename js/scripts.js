@@ -209,9 +209,9 @@ if("undefined"==typeof jQuery)throw new Error("Bootstrap's JavaScript requires j
     $(this).addClass('active');
 });
 
-      $('#buble').on('click', function() {
+      $('#two svg').on('click', function() {
          $('#overlay').toggle()
-         $(this).toggle("opacity", "0.6");
+         $(this).css("opacity", "0.6");
     });
 
     $('.tab-content .close').on('click', function() {

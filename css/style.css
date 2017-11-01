@@ -328,22 +328,23 @@ p.bold{
 }
 
 svg{
-     opacity:0;
+    opacity: 0;
+    transition: all ease-in 1s;
+    position: relative;
+    top: 11px;
+    left: 118px;
+    float: right;
+    cursor: pointer;
+    z-index: 5;
     transition: all ease-in 1s;
 }
 
- svg#Ebene_1{
-    max-width: 100%;
-    max-height: 100%;
-    position: relative;
+svg#startbuble{
     top: -13px;
-    right: -435px;
-    margin: auto;
-    z-index: 5000;
+    left: 185px;
 }
 
-#intro a:hover svg#Ebene_1,
-#two.active svg{
+#intro a:hover svg#startbuble{
     opacity: 1;
     transition: all ease-in 1s;
 }
@@ -461,6 +462,12 @@ ul, ol {
     color: black;
 }
 
+.sidebar-inner ul li:hover svg,
+.sidebar-inner ul li.active svg{
+    opacity:1;
+    transition: all ease-in 1s;
+}
+
 #one:hover:after, #one.active:after{
     background-color: var(--one);
 }
@@ -487,15 +494,6 @@ ul, ol {
 
 #seven:hover:after, #seven.active:after{
     background-color: var(--seven);
-}
-
-#buble{
-    display: block;
-    left: 222px;
-    position: absolute;
-    z-index: 2;
-    top: 148px;
-    cursor: pointer;
 }
 
 /*Overlay*/
