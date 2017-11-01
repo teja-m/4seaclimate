@@ -542,11 +542,11 @@ ul, ol {
   color: #fff;
 }
 
-.tabs-left img {;
+.tabs-left img {
   width:21px;
 }
 
-.tabs-left ul .active img {;
+.tabs-left ul .active img {
   opacity: 0.5;
 }
 
