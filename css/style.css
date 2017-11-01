@@ -491,11 +491,11 @@ ul, ol {
 
 #buble{
     display: block;
-left: 222px;
-position: absolute;
-z-index: 2;
-top: 148px;
-cursor: pointer;
+    left: 222px;
+    position: absolute;
+    z-index: 2;
+    top: 148px;
+    cursor: pointer;
 }
 
 /*Overlay*/
@@ -524,20 +524,30 @@ cursor: pointer;
   height:129px;
   margin-top:9em;
 }
+
 .tabs-left ul li {
   float: none;
   margin: 0;
 }
+
 .tabs-left ul li a {
   margin-right: 0;
   border: 0;
+  padding: 11px;
 }
+
 .tabs-left ul li a:hover {
   background-color: transparent;
 }
+
 .tabs-left ul .glyphicon {
   color: #fff;
 }
+
+.tabs-left img {;
+  width:21px;
+}
+
 .tabs-left ul .active img {;
   opacity: 0.5;
 }
@@ -560,6 +570,12 @@ cursor: pointer;
   margin-left: 45px;
   border: 2px solid var(--two);
   background-color: white;
+}
+
+.tab-content .tab-pane img{
+    width: 10px;
+    margin: 5px;
+    cursor:pointer
 }
 
 .tab-content p{
@@ -590,15 +606,18 @@ cursor: pointer;
 }
 
 .tab-content .close {
-position: absolute;
-top: 0px;
-right: 0px;
-display: inline-block;
-opacity:1;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    display: inline-block;
+    opacity:1;
 }
 
 .tab-content .more {
-position: absolute; bottom: 0px;right: 0px;display: inline-block;
+    position: absolute; 
+    bottom:0px;
+    right: 0px;
+    display: inline-block;
 }
 
 #b {
@@ -606,8 +625,6 @@ position: absolute; bottom: 0px;right: 0px;display: inline-block;
 }
 #b video{
   width: 100%;
-  height: auto;
-  padding-top: 20px;
 }
 
 #c {

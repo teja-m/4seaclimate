@@ -211,7 +211,11 @@ if("undefined"==typeof jQuery)throw new Error("Bootstrap's JavaScript requires j
 
       $('#buble').on('click', function() {
          $('#overlay').toggle()
-         $(this).addClass('active');
+         $(this).toggle("opacity", "0.6");
+    });
+
+    $('.tab-content .close').on('click', function() {
+         $('#overlay').hide();
     });
 
 /*
