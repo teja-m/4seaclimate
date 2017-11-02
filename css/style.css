@@ -496,6 +496,16 @@ ul, ol {
     background-color: var(--seven);
 }
 
+#mapcard {
+    width: 100%;
+    height: 100%;
+    background: url(../img/karte_groß.png);
+    background-repeat: repeat;
+    background-size: auto auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 /*Overlay*/
 
 .overlay{
@@ -604,24 +614,26 @@ ul, ol {
 }
 
 .tab-content .close {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    display: inline-block;
-    opacity:1;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  display: inline-block;
+  opacity:1;
 }
 
 .tab-content .more {
-    position: absolute; 
-    bottom:0px;
-    right: 0px;
-    display: inline-block;
+  position: absolute; 
+  bottom:0px;
+  right: 0px;
+  display: inline-block;
 }
 
 #b {
   height: 100%;
 }
+
 #b video{
+  height: 100%;
   width: 100%;
 }
 

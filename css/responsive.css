@@ -1,11 +1,18 @@
-@media (min-width: 1200px){
-
+@media (max-width: 1200px){
+    svg{
+        top: -13px;
+        left: 142px;
+    }
 }
 
 @media (max-width : 1024px) {
     .navbar-default .navbar-nav > li > a {
         padding-left: 30px;
         padding-right: 30px;
+    }
+    svg{
+        top: -13px;
+        left: 142px;
     }
 }
 
